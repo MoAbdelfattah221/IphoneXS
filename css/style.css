@@ -1,0 +1,173 @@
+:root{
+    --padding: 80px;
+}
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Open Sans',sans-serif;
+    height: 100vh;
+    background-color: #000000;
+}
+.heading{
+    color: #eed490;
+    font-family: 'Ubuntu', sans-serif;
+}
+@media (max-width: 1199px) {
+    br{
+        display: none;
+    }
+}
+.section-one{
+    background-image: url(../images/background-section-one.png);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: var(--padding);
+}
+.section-one .container{
+    margin-bottom: 150px;
+}
+@media (max-width: 991px) {
+    .section-one .container{
+        margin-bottom: 200px;
+    }
+}
+.section-one h1{
+    font-size: 70px;
+}
+.section-one p{
+    font-size: 13px;
+}
+.section-two{
+    padding-top: var(--padding);
+    padding-bottom: var(--padding);
+    background-image: url(../images/background-section-two.png);
+    background-position: center;
+    background-size: cover;
+}
+.section-two h1{
+    font-size: 40px;
+}
+@media (max-width: 991px) {
+    .section-two .container .content{
+        text-align: center !important;
+    }
+}
+.section-three{
+    padding-top: var(--padding);
+    padding-bottom: var(--padding);
+}
+.section-three .container .row div ul li{
+    position: relative;
+}
+.section-three .container .row div ul li::before{
+    content: "\f111";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 6px;
+    margin-right: 12px;
+}
+.section-three .container .row div p{
+    font-size: 16px;
+}
+.section-three .container .row ul li{
+    font-size: 15px;
+}
+.section-four{
+    padding-top: var(--padding);
+    padding-bottom: var(--padding);
+}
+@media (max-width: 991px) {
+    .section-four div{
+        margin-bottom: 25px;
+    }
+}
+.section-five{
+    background-image: url(../images/background-section-four.png);
+    background-position: center;
+    background-size: cover;
+    padding-top: calc(var(--padding) + 50px);
+    padding-bottom: var(--padding);
+}
+.section-five .content{
+    width: 570px;
+}
+@media (max-width: 767px) {
+    .section-five .content{
+        width: auto;
+    }
+}
+.section-five .content h2{
+    font-size: 55px;
+}
+@media (max-width: 767px) {
+    .section-five .container .content .text{
+        flex-direction: column;
+    }
+}
+.section-six{
+    padding-top: var(--padding);
+    padding-bottom: var(--padding);
+}
+@media (max-width: 991px) {
+    .section-six{
+        padding-bottom: 0;
+    }
+}
+.section-six .container img{
+    right: 0;
+    top: 200px;
+    width: 700px;
+    z-index: -2;
+}
+.section-six .container .content{
+    width: 530px;
+}
+@media (max-width: 767px) {
+    .section-six .container .content{
+        width: auto;
+    }
+    .section-six .container img{
+        display: none;
+    }
+}
+.section-six .container .content h2{
+    color: white !important;
+    font-size: 60px;
+}
+.section-six .container .content h5{
+    color: white !important;
+}
+.section-seven{
+    background-image: url(../images/background-section-six.png);
+    background-position: center;
+    background-size: cover;
+}
+.section-seven .container{
+    height: 125vh;
+}
+.section-seven .content h2{
+    font-size: 60px;
+}
+.section-eight{
+    padding-top: var(--padding);
+    padding-bottom: var(--padding);
+}
+footer{
+    font-size: 11px;
+}
+footer i{
+    color: red;
+}
+.to-top{
+    width: 30px; 
+    cursor: pointer; 
+    right: 30px;
+    bottom: 40px;
+    z-index: 10;
+}
